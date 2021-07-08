@@ -1,6 +1,7 @@
 # ZOpenWrtAction
 
 - [x] xiaomi_r4a_gigabytes
+- [x] redmi_ac2100
 
 [原仓库地址](https://github.com/XXKDB/MI-R4A-breed-openwrt)
 
