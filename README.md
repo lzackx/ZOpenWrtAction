@@ -13,4 +13,4 @@
 
 主题修改参考：[小改的Openwrt-动漫主题](https://www.right.com.cn/FORUM/thread-4135160-1-1.html)
 
-
+[恩山原固件收集贴](https://www.right.com.cn/forum/thread-4102208-1-1.html)
