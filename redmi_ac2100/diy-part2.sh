@@ -33,8 +33,9 @@ rm -rf package/lean/luci-theme-ifit
 #下载主题luci-theme-argon
 #git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/lean/luci-theme-argon
 #git clone https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom.git package/lean/luci-theme-infinityfreedom
-git clone https://github.com/XXKDB/luci-theme-argon_armygreen.git package/lean/luci-theme-argon_armygreen
+#git clone https://github.com/XXKDB/luci-theme-argon_armygreen.git package/lean/luci-theme-argon_armygreen
 #git clone https://github.com/YL2209/luci-theme-ifit.git package/lean/luci-theme-ifit
+cp -rf ../luci-theme-argon_armygreen package/lean/luci-theme-argon_armygreen
 
 # 修改luci-theme-argon_armygreen主题渐变色，16进制RGB
 #登录页面背景颜色 透明值
@@ -110,10 +111,10 @@ sed -i 's@.*CYXluq4wUazHjmCDBCqXF*@#&@g' package/lean/default-settings/files/zzz
 # 修改插件名字（修改名字后不知道会不会对插件功能有影响，自己多测试）
 # sed -i 's/"Turbo ACC 网络加速"/"网络加速"/g' package/lean/luci-app-flowoffload/po/zh-cn/flowoffload.po
 
-# 修改默认wifi名称ssid为XXKDB
+# 修改默认wifi名称ssid为XM_ZOS
 sed -i 's/ssid=OpenWrt/ssid=XM_ZOS/g' package/kernel/mac80211/files/lib/wifi/mac80211.sh
 
-# 修改默认wifi密码key为password
+# 修改默认wifi密码key为
 sed -i 's/encryption=none/encryption=psk2/g' package/kernel/mac80211/files/lib/wifi/mac80211.sh
 #使用sed 在第四行后添加新字
 #sed -e 120a\set wireless.default_radio${devidx}.key=password package/kernel/mac80211/files/lib/wifi/mac80211.sh
